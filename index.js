@@ -3,7 +3,12 @@ const app = express();
 const cors = require('cors');
 const port = process.env.PORT || 5000;
 
-app.use(cors())
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    credentials: true,
+  })
+);
 
 const categories = require('./data/categories.json');
 const news = require('./data/news.json');
