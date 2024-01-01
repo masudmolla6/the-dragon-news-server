@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://the-news-dragon-client-169d2.firebaseapp.com",
     credentials: true,
   })
 );
